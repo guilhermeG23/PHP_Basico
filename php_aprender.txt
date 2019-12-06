@@ -1,0 +1,53 @@
+#PHP funciona em varios ambientes e não só Web
+#PHP foi feito para Web mas funciona em varios outros cenarios
+
+#Apos instalado o PHP, ele adiciona o interpretador do php
+
+#Arquivos de exemplos, estaram no mesmo diretorio
+
+#Comandos
+php -v -> mostra a versao do php
+
+#Chamando o shell interativo do PHP
+#Por executar todos os comandos do php no shell interativo
+php -a
+
+#Para sair é só dar um ctrl+c ou um quit na linha de comando
+
+#Para executar uma arquivo php, faça:
+#Ele vai executar o conteudo dentro do arquivo
+php <arquivo>.php 
+
+#Todo o arquivo php necessita da abertura das chaves que mencionam o uso de php
+
+<?php	?>
+
+<?=<conteudo>?>
+
+#Oque é uma variavel
+Valor que fica em RAM e que pode modificar seu valor quand chamado
+
+#PHP é fracamente tipado
+
+#Php trabalha com double e não float -> Double é mais preciso
+
+#PHP é dinamicamente tipado, descobre o tipo da variavel baseado em seu valor
+
+#PHP não quebra linha sozinho, tem que usar alguma coisa para fazer efeito como um \n
+
+\n -> Quebra de linha
+\r -> Nova linha
+\t -> Tab na linhas -> Espacamento é definido no php.ini
+
+#Entre muitos mais outros , tem que olhar no manual do PHP para saber qual usar
+
+#Usando o PHP_EOL é um quebra linha proprio do PHP, que não se preocuopa com o quebra linha que determinado sistema usado, ele pega o quebra de linha do SO atual e coloca no local
+
+#PHP é fracamente estruturada -> Contanto ue tenha logica as acoes ele não se importa com a estrutura
+
+#PHP suporta linguagem e simbolo sobre decisoes
+
+&& -> E -> and
+|| -> Ou -> or
+! -> Não exclusivo
+!= -> Diferente
