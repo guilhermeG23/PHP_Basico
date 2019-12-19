@@ -51,3 +51,83 @@ Valor que fica em RAM e que pode modificar seu valor quand chamado
 || -> Ou -> or
 ! -> Não exclusivo
 != -> Diferente
+
+Diferenca de subrotina para funcao
+
+Subrotina executa o que tem que executar e fim
+Funcao retorna alguma coisa após o processamento
+
+-----------------------------------------------
+
+#Diferença no uso de chaves
+
+#É mais um motivo de padrão de comunidade
+
+#funções e subrotinas -> chaves abaixo da linha
+function teste 
+{
+}
+
+#Estrututas de controle -> Chave na mesma linha
+if () {
+
+}
+
+-----------------------------------------------
+
+#Chamando Arquivos
+
+Include -> Chama o arquivo porém se o mesmo não exister, não da nenhum problema
+Require -> Chama arquivo, porém se não encontrar retorna um erro
+require_once -> Função que garante que arquivo seja requirido somente uma vez
+
+-----------------------------------------------
+
+Valor VS Referencia
+
+Valor -> Copia do original
+Referencia -> Valor original
+
+Para chamar valores use o comum $
+para chamar uma referencia, use &$
+
+Valor -> Segurança do original
+Referencia -> Economia na modificação 
+
+-----------------------------------------------
+
+list -> 
+Atribui automaticamente valores de uma array para dentro de variaveis
+
+list($v1, $v2, $v3) = $arrayComInformacoes;
+
+Pode se apontar chaves de um array para outro
+As chaves tem que ser dos arrays que iram receber o valor, para ele não entender que as chaves são numeros
+
+list('t1' => $v1, 't2' => $v2, 't3' => $v3) = $arrayComInformacoes;
+
+Apagando uma váriavel da memoria
+unset($variavel);
+
+Pode se excluir mais de uma variavel ao mesmo tempo
+unset($variavel1, $variavel2);
+
+Função muito util para tirar valores de listas e arrays
+
+-----------------------------------------------
+
+Subir um server com PHP
+
+Tem que indicar o local e a porta
+php -S localhost:8000
+
+Ele vai procurar pelo index, porém caso não tiver, ele ainda vai funcionar, 
+usando como ponto de referencia o diretorio onde você executou o server, é só escrever o
+caminho dos arquivos na url
+
+-----------------------------------------------
+
+<?= é a exibição em linha unica do PHP
+
+<?php   -> comum
+<?=     -> Forma redusida
